@@ -663,7 +663,10 @@ sub send_request
 
 1;
 
- 
+=head1 SOURCE CODE
+
+The source code for this module is held in a public git repository on Github : https://github.com/pryanet/WebService-DPD-API
+
 =head1 LICENSE AND COPYRIGHT
  
 Copyright (c) 2014 Richard Newsham, Pryanet Ltd

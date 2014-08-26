@@ -13,7 +13,7 @@ use namespace::clean;
 
 # ABSTRACT: communicates with DPD API
 
-our $VERSION = 'v0.0002';
+our $VERSION = 'v0.0003';
 
  
 =head1 NAME
@@ -303,7 +303,7 @@ sub get_labels
 
 =head1 FUTURE METHODS
 
-These methods are implemented as documented in the DPD API specification.  Although at the time of writing their functionality has not been publically implemented within the API.
+These methods are implemented as documented in the DPD API specification.  Although at the time of writing their functionality has not been publicly implemented within the API.
 
 =cut 
 
@@ -544,7 +544,7 @@ sub get_manifest_by_id
 
 =head2 _to_query_params
 
-Recursiverly converts hash of hashes into query string for http request
+Recursively converts hash of hashes into query string for http request
 
 =cut
 sub _to_query_params

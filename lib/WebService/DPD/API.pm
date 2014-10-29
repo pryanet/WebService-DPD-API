@@ -687,6 +687,7 @@ None known.
 	Carp
 	Moo
 	LWP::UserAgent
+	LWP::Protocol::https
 	HTTP::Request::Common
 	URI::Escape
 	Data::Dumper

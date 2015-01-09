@@ -13,12 +13,16 @@ use namespace::clean;
 
 # ABSTRACT: communicates with DPD API
 
-our $VERSION = 'v0.0003';
+our $VERSION = 'v0.0004';
 
  
 =head1 NAME
 
-WebService::DPD::API
+WebService::DPD::API 
+
+=head1 WARNING
+
+This module is depreciated. It will be replaced by WebService::GeoPost::DPD, this is allow expanding the namespace to accomodate other API services provided by GeoPost.
 
 =head1 SYNOPSIS
 
@@ -51,7 +55,7 @@ has password => (
 );
 
 has url => ( is => 'ro',
-			 default => 'https://api.dpd.co.uk'
+			 default => sub {'https://api.dpd.co.uk'},
 			);
 
 has host => ( is => 'ro',
@@ -73,7 +77,7 @@ has geoSession => (
 
 has geoClient => (
 	is => 'ro',
-	default => 'thirdparty/pryanet',
+	default => sub {'thirdparty/pryanet'},
 );
 
 has debug => (
